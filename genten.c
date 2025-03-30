@@ -944,11 +944,12 @@ int main(int argc, char *argv[])
 			exit(1);  
 		}
 		
-		fprintf(fptr, "%d\n", order);
-		for (int i = 0; i<order; i++){
-			fprintf(fptr, "%d ", dim[i]);
-		}
-		fprintf(fptr, "\n");
+        // Just print nonzeros entries for SPLATT
+        // fprintf(fptr, "%d\n", order);
+        // for (int i = 0; i<order; i++){
+        // fprintf(fptr, "%d ", dim[i]);
+        // }
+		// fprintf(fptr, "\n");
 		
 		for (int n = 0; n < nnz; n++){
 			// fprintf(fptr, "%d %d %d ", ind_0[n]+1, ind_1[n]+1, ind_2[n]+1);
